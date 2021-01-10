@@ -4,8 +4,8 @@ function Counter() {
   return (
     <div>
       <h1> Value... </h1>
-      <button> Add </button>
-      <button> Decrease </button>
+      <button> Deposit $10 </button>
+      <button> Withdraw $10 </button>
     </div>
   );
 }
