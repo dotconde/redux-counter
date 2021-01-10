@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
+import { connect } from "react-redux";
 import { deposit, withdraw } from "../../store/amount/action";
 
-function Counter() {
+function Counter({ deposit, withdraw }) {
   const amountRef = useRef(null);
   return (
     <div>
@@ -12,4 +13,4 @@ function Counter() {
   );
 }
 
-export default Counter;
+export default connect(null, { deposit, withdraw })(Counter);
