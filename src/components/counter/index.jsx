@@ -1,10 +1,11 @@
 import React from "react";
 import { connect } from "react-redux";
 import { deposit, withdraw } from "../../store/amount/action";
+import { selectCurrentAmount } from "../../store/amount/reducer";
 
 const mapStateToProps = (state) => {
   return {
-    amount: state.amountReducer.amount,
+    amount: selectCurrentAmount(state),
   };
 };
 
